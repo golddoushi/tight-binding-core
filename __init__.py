@@ -12,8 +12,3 @@ import matplotlib.pyplot as plt
 tb=TBmodel()
 tb.plotWCC(algorithm='WilsonLoop')
 tb.plotbands()
-print tb.calcBerryCurvAtSingleKpt(np.array([1./3-0.005,1./3-0.005,0.]),
-                                  np.array([0.01,0.,0.]),
-                                  np.array([0.,0.01,0.]),
-                                  bandset=-1,
-                                  algorithm='GradualDecompose')
